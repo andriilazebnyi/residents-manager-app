@@ -1,5 +1,7 @@
 # Residents and programs manager app
 
+![app iamge](/docs/app.png)
+
 ## Functionality
 
 The app provides the next functionality:
@@ -9,6 +11,28 @@ The app provides the next functionality:
 - assign resident to a program from the residents page
 - assign program to a resident from the programs page
 
+## The idea
+
+Provide a convinient way to display and manage residents and programs.
+
+Since we deal with entities with many properties, presenting residents and programs as tables seems the most convinient way to provide all needed information to the user.
+
+## Known tradeoffs and limitations
+
+### Validation
+
+Validation is applied only to forms used to create resident and program.
+
+### Pagination
+
+The API used doesn't support pagination. All data displayed at once.
+
+### Data fetching
+
+For simplicity data fetching is done in server components (pages, React Server Components). Obtained data (residents, programs) then passed to child components.
+
+However, due to the dynamic nature of this data, in real world app, it would be better to fetch data on-demand in some use cases. Eg, always load fresh list of residents when opening modal to assign resident to a program.
+
 ## How to run
 
 This app is built on top of:
@@ -17,6 +41,8 @@ This app is built on top of:
 - [TypeScript](https://www.typescriptlang.org/) as strongly typed programming language.
 - [TailwindCSS](https://tailwindcss.com/) as CSS framework.
 - [Flowbite React](https://flowbite-react.com/) as an open-source UI component library built on top of Tailwind CSS with React components and based on the Flowbite Design System.
+- [React Hook Form](https://react-hook-form.com/) to build forms.
+- [Yup](https://github.com/jquense/yup) for forms validation.
 
 ### Install
 
