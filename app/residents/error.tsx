@@ -9,7 +9,6 @@ export default function Error({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
-  console.log("error", error);
   return (
     <div className="flex flex-col items-center p-5">
       <h2>{error.message}</h2>

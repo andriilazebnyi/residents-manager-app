@@ -14,9 +14,9 @@ import {
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
-import { createProgram } from "../../actions/program";
 import { useState, useTransition } from "react";
-import { Dimension, Recurrence, ResidentLevelOfCare } from "../../models";
+import { createProgram } from "@/actions/program";
+import { Dimension, Recurrence, ResidentLevelOfCare } from "@/models";
 import { InputTags } from "../InputTags/InputTags";
 import { Toast, ToastType } from "../Toast/Toast";
 

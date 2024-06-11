@@ -1,9 +1,9 @@
-import { Button } from "flowbite-react";
 import Link from "next/link";
-import { ProgramsTable } from "../../components/ProgramsTable/ProgramsTable";
-import { AddProgramModal } from "../../components/AddProgramModal/AddProgramModal";
+import { Button } from "flowbite-react";
 import { Suspense } from "react";
-import { AddProgramToResidentModal } from "../../components/AddProgramToResidentModal/AddProgramToResidentModal";
+import { ProgramsTable } from "@/components/ProgramsTable/ProgramsTable";
+import { AddProgramModal } from "@/components/AddProgramModal/AddProgramModal";
+import { AddProgramToResidentModal } from "@/components/AddProgramToResidentModal/AddProgramToResidentModal";
 
 async function getResidents() {
   const response = await fetch(`${process.env.API_URL}residents`, {

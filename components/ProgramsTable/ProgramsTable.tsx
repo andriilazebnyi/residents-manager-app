@@ -10,7 +10,7 @@ import {
 } from "flowbite-react";
 import Link from "next/link";
 import { HiOutlineClipboardCopy } from "react-icons/hi";
-import { Program } from "../../models";
+import { Program } from "@/models";
 
 interface ProgramsTableProps {
   programs: Program[];

@@ -5,9 +5,9 @@ import { Button, Label, Modal, Select } from "flowbite-react";
 import { useState, useTransition } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
-import { Resident } from "../../models";
-import { Toast, ToastType } from "../Toast/Toast";
 import { addProgramToResident } from "@/actions/program";
+import { Resident } from "@/models";
+import { Toast, ToastType } from "../Toast/Toast";
 
 interface AddProgramToResidentProps {
   residents: Resident[];

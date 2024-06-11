@@ -10,7 +10,7 @@ import {
 } from "flowbite-react";
 import { HiOutlineClipboardCopy } from "react-icons/hi";
 import Link from "next/link";
-import { Resident } from "../../models";
+import { Resident } from "@/models";
 
 interface ResidentsTableProps {
   residents: Resident[];

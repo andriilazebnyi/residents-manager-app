@@ -14,12 +14,12 @@ import {
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
-import { createResident } from "../../actions/resident";
+import { createResident } from "@/actions/resident";
 import {
   ResidentAmbulation,
   ResidentLevelOfCare,
   ResidentStatus,
-} from "../../models";
+} from "@/models";
 import { Toast, ToastType } from "../Toast/Toast";
 
 export interface AddResidentForm {
