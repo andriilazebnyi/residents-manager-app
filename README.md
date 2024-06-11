@@ -1,5 +1,14 @@
 # Residents and programs manager app
 
+## Functionality
+
+The app provides the next functionality:
+
+- view all residents
+- view all programs
+- assign resident to a program from the residents page
+- assign program to a resident from the programs page
+
 ## How to run
 
 This app is built on top of:
@@ -49,4 +58,4 @@ to start development server and access running app by the next URL: [http://loca
 
 ## Live version
 
-Live version is available on Vercel by the next URL: [https://residents-manager.vercel.app/](https://residents-manager.vercel.app/)
+Live version is available on Vercel by the next URL: [https://residents-manager-app.vercel.app/](https://residents-manager-app.vercel.app/)
